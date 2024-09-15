@@ -19,4 +19,9 @@ public class SimpleRiderService implements RiderService {
     public void requestRide() {
 
     }
+
+    @Override
+    public Rider createRider(Rider rider) {
+        return riderRepository.save(rider);
+    }
 }

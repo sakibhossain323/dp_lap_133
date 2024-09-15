@@ -15,7 +15,7 @@ public class InMemoryDbContext implements DbContext {
         this.driverRepository = new InMemoryDriverRepository();
         this.tripRepository = new InMemoryTripRepository();
 
-
+        populateData();
     }
 
     @Override
@@ -31,5 +31,9 @@ public class InMemoryDbContext implements DbContext {
     @Override
     public TripRepository getTripRepository() {
         return tripRepository;
+    }
+
+    private void populateData() {
+
     }
 }

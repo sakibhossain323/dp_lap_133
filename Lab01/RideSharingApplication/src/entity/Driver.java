@@ -4,7 +4,7 @@ public class Driver {
     private int id;
     private String name;
     private String vehicleType;
-    private String Location;
+    private String location;
     private int rating;
     private Boolean available;
 
@@ -15,7 +15,7 @@ public class Driver {
         this.id = id;
         this.name = name;
         this.vehicleType = vehicleType;
-        Location = location;
+        this.location = location;
         this.rating = rating;
         this.available = available;
     }
@@ -45,11 +45,11 @@ public class Driver {
     }
 
     public String getLocation() {
-        return Location;
+        return location;
     }
 
     public void setLocation(String location) {
-        Location = location;
+        this.location = location;
     }
 
     public int getRating() {

@@ -1,3 +1,4 @@
+import entity.Rider;
 import service.DriverService;
 import service.RiderService;
 import service.TripService;
@@ -23,9 +24,11 @@ public class App {
         boolean running = true;
         while(running)
         {
-            Scanner scanner = new Scanner(System.in);
-            int choice = scanner.nextInt();
-            if(choice==0) running = false;
+            Rider rider = new Rider();
+            rider.setName("Alice");
+            rider = riderService.createRider(rider);
+            System.out.println(rider);
+            running = false;
         }
     }
 }

@@ -1,5 +1,7 @@
 package repository;
 
-public interface RiderRepository {
+import entity.Rider;
+
+public interface RiderRepository extends Repository<Rider> {
 
 }
