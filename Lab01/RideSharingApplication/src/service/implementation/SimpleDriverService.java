@@ -1,5 +1,6 @@
 package service.implementation;
 
+import entity.Driver;
 import repository.DriverRepository;
 import service.DriverService;
 
@@ -28,5 +29,10 @@ public class SimpleDriverService implements DriverService {
     @Override
     public void startTrip() {
 
+    }
+
+    @Override
+    public Driver createDriver(Driver driver) {
+        return driverRepository.save(driver);
     }
 }

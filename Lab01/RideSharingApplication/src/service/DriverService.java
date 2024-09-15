@@ -10,4 +10,6 @@ public interface DriverService {
     void rateRider();
     void updateLocation();
     void startTrip();
+
+    Driver createDriver(Driver driver);
 }

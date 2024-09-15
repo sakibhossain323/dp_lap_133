@@ -1,4 +1,6 @@
 package repository;
 
-public interface TripRepository {
+import entity.Trip;
+
+public interface TripRepository extends Repository<Trip> {
 }

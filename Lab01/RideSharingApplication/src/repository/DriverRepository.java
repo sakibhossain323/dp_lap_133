@@ -1,4 +1,6 @@
 package repository;
 
-public interface DriverRepository {
+import entity.Driver;
+
+public interface DriverRepository extends Repository<Driver> {
 }

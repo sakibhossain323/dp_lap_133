@@ -1,5 +1,6 @@
 package service.implementation;
 
+import entity.Trip;
 import repository.TripRepository;
 import service.TripService;
 
@@ -20,5 +21,10 @@ public class SimpleTripService implements TripService {
 
     public void completeTrip() {
         System.out.println("Trip completed");
+    }
+
+    @Override
+    public Trip createTrip(Trip trip) {
+        return tripRepository.save(trip);
     }
 }
