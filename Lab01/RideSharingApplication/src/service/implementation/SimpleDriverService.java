@@ -1,16 +1,32 @@
 package service.implementation;
 
-import entity.Driver;
-import entity.RideType;
+import repository.DriverRepository;
 import service.DriverService;
 
-import java.util.List;
-
 public class SimpleDriverService implements DriverService {
+    private final DriverRepository driverRepository;
+
+    public SimpleDriverService(DriverRepository driverRepository) {
+        this.driverRepository = driverRepository;
+    }
 
     @Override
+    public void acceptRide() {
 
-    public List<Driver> findAvailableDrivers(RideType rideType) {
-        return null;
+    }
+
+    @Override
+    public void rateRider() {
+
+    }
+
+    @Override
+    public void updateLocation() {
+
+    }
+
+    @Override
+    public void startTrip() {
+
     }
 }

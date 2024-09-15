@@ -1,13 +1,13 @@
 package service.implementation;
 
-import service.DriverService;
+import repository.TripRepository;
 import service.TripService;
 
 public class SimpleTripService implements TripService {
-    private final DriverService driverService;
+    private final TripRepository tripRepository;
 
-    public SimpleTripService(DriverService driverService) {
-        this.driverService = driverService;
+    public SimpleTripService(TripRepository tripRepository) {
+        this.tripRepository = tripRepository;
     }
 
     public void assignDriver() {

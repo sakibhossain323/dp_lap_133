@@ -3,5 +3,5 @@ package service;
 import entity.RideType;
 
 public interface RiderService {
-    void requestRide(RideType rideType);
+    void requestRide();
 }
