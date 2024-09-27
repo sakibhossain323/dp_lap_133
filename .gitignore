@@ -1,0 +1,74 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# ASP.NET Scaffolding
+.scaffolding
+
+# Logs and debugging
+*.log
+*.tlog
+*.pdb
+
+# NuGet packages
+*.nupkg
+.nuget/
+
+# Visual Studio specific files
+.vs/
+.vscode/
+
+# Rider IDE specific files
+.idea/
+*.sln.iml
+
+# Ignore coverage and testing results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Local configuration files
+appsettings.Development.json
+
+# Others
+project.lock.json
+project.fragment.lock.json
