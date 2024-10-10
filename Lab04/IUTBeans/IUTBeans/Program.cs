@@ -2,14 +2,11 @@
 
 using IUTBeans;
 
-Beverage beverage1 = new Espresso();
+Beverage cappuccino = new Cappuccino();
+Console.WriteLine(cappuccino);
 
-ICondimentAdder adder = new MilkAdder(null);
-beverage1 = adder.AddCondiment(beverage1);
-Console.WriteLine(beverage1);
+Beverage espresso = new Espresso(new Milk(new WhippedCream()));
+Console.WriteLine(espresso);
 
-Beverage beverage2 = new Espresso();
-ICondimentAdder adder2 = new MilkAdder(new MilkAdder(new WhiteSugarAdder(null)));
-beverage2 = adder2.AddCondiment(beverage2);
-
-Console.WriteLine(beverage2);
+Beverage latte = new Latte(new Milk(new Milk(new WhiteSugar())));
+Console.WriteLine(latte);
