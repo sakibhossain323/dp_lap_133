@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace IUTBeans
 {
-    internal interface ICondimentAdder
+    internal interface ICondiment
     {
-        Beverage AddCondiment(Beverage beverage);
+        double getPrice();
+        string getDescription();
     }
 }

@@ -8,8 +8,19 @@ namespace IUTBeans
 {
     internal abstract class Beverage
     {
+        private ICondiment? condiment;
         public double Price { get; set; }
         public string Description { get; set; }
+
+        protected Beverage()
+        {
+            condiment = null;
+        }
+
+        protected Beverage(ICondiment condiment)
+        {
+            this.condiment = condiment;
+        }
 
         public override string ToString()
         {

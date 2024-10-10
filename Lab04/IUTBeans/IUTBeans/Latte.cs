@@ -8,10 +8,16 @@ namespace IUTBeans
 {
     internal class Latte : Beverage
     {
-        public Latte()
+        public Latte(): base()
         {
-            Description = "Latte with ";
+            Description = "Latte";
             Price = 2.99;
+        }
+
+        public Latte(ICondiment condiment):  base(condiment)
+        {
+            Description = "Latte with " + condiment.getDescription();
+            Price = 2.99 + condiment.getPrice();
         }
     }
 }
